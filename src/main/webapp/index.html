@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Followup System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>
+  Followup System
+</h1>
+<h3 style="text-align:center">
+  <a class='button' href='./pages/edit.html'>
+    Add New
+  </a>
+</h3>
+<main>
+  <table>
+    <thead>
+      <tr>
+        <th>
+         Followup Title
+        </th>
+        <th>
+          Next Followup Date
+        </th>
+        <th></th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td data-title='Followup Name'>
+          Test 1
+        </td>
+        <td data-title='Followup Date'>
+         24/12/2022
+        </td>
+        <td class='select'>
+          <a class='button1' href='./pages/edit.html'>
+            Edit
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td data-title='Followup Name'>
+          Test 2
+        </td>
+        <td data-title='Followup Date'>
+         24/12/2022
+        </td>
+        <td class='select'>
+          <a class='button1' href='./pages/edit.html'>
+            Edit
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td data-title='Followup Name'>
+          Test 3
+        </td>
+        <td data-title='Followup Date'>
+         24/12/2022
+        </td>
+        <td class='select'>
+          <a class='button1' href='./pages/edit.html'>
+            Edit
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td data-title='Followup Name'>
+          Test 4
+        </td>
+        <td data-title='Followup Date'>
+         24/12/2022
+        </td>
+        <td class='select'>
+          <a class='button1' href='./pages/edit.html'>
+            Edit
+          </a>
+        </td>
+      </tr>
+    </tbody>
+    <tbody id="followupContent"></tbody>
+  </table>
+  <div class='detail'>
+    <div class='detail-container'>
+      <form action="#">
+        <label for="fname">Followup Title:</label>
+        <input style="margin-left: 97px;" type="text" id="fname" name="fname" value=""><br><br>
+        <label for="lname">Matter:</label>
+        <input style="margin-left: 150px;" type="text" id="lname" name="lname" value=""><br><br>
+        <label for="lname">Followup Date:</label>
+        <input style="margin-left: 92px;" type="text" id="lname" name="lname" value=""><br><br>
+        <input class='button1' type="submit" value="Save">
+      </form> 
+    </div>
+    <div class='detail-nav'>
+      <button class='close'>
+        Close
+      </button>
+    </div>
+  </div>
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+  <script  src="./index.js"></script>
+
+</body>
+</html>
