@@ -10,7 +10,22 @@ $(document).ready(function(){
         }
     });
 });
+(document).ready(function () {
+        $("#save").click(saveData () {
+            $.ajax(
+            {
+                type: "POST", //HTTP POST Method
+                url: "/followup/save", // Controller/View 
+                data: { //Passing data
+                    Name: $("#fname").val(), //Reading text box values using Jquery 
+                    City: $("#lname").val(),
+                    Address: $("#lname").val()
+                }
 
+            });
+
+        });
+    });
 
 function loadData(followupJSON){
 console.log(followupJSON)
